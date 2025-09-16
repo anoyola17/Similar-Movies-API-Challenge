@@ -1,0 +1,17 @@
+<header>
+    <form id="movie-search-form" action="/search" method="get">                                                          {{! Search form for movies }}
+        <input name="title" type="text" id="movie-search-input" placeholder="Search for a movie..." required>                 {{! Input field for movie search }}
+        <button type="submit" >Search</button>                                              {{! Submit button for the search form }}
+    </form>
+
+    <nav>
+        <a href="/">Now Playing</a>         {{! Link to the now playing page (default) }}
+        <a href="/popular">Popular</a>      {{! Link to the popular page }}
+        <a href="/topRated">Top Rated</a>   {{! Link to the top rated page }}
+        <a href="/upcoming">Upcoming</a>    {{! Link to the upcoming page }}
+    </nav>
+</header>
+
+<body>
+    <script src="/js/app.js"></script>       {{! Link to the app.js file }}
+</body>

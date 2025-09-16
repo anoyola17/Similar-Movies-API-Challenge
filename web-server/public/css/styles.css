@@ -1,0 +1,127 @@
+body {
+    color: #333333;
+    font-family: 'Futura', Helvetica, sans-serif;
+    max-width: 95rem;
+    margin: 0 auto;
+    padding: 0 16px;
+    background-color: black;
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 2rem;
+    padding: 1.5rem 0;
+    text-align: center;
+    
+}
+
+header{
+    background-color: navy;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+form{
+    margin: auto;
+    text-align: center;
+}
+
+input{
+    border: 1px solid #cccccc;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 8px;
+    width: 60rem;
+    height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 20px;
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid black;
+    font-family: 'Georgia';
+    background: SteelBlue;
+    color: white;
+    padding: 8px;
+    width: 10rem;
+    height: 2.5rem;
+    margin-left: 6.5rem;
+    font-size: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+nav a {
+    color: whitesmoke;
+    margin-right: auto 0;
+    text-decoration: none;
+    font-family: 'Georgia';
+    font-size: 24px;
+    
+}
+
+nav a:hover {
+    text-decoration: underline overline whitesmoke;
+}
+
+.grid-container{
+    display: grid;                                         
+    grid-template-columns: repeat(5, 1fr);   
+    padding-top: 1.5rem;
+    gap: 25px 20px;                        
+}
+
+.grid-container img{
+    display: block;
+    margin: auto;
+    height: 300px;
+    width: 200px;
+}
+
+.grid-container h3, p{
+    display: block;
+    margin: auto;
+    width: 75%;
+    color: whitesmoke;
+}
+
+.error-container{
+    color: whitesmoke;
+}
+
+#search-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    gap: 25px 20px;      
+}
+
+#search-container img{
+    height: 20rem;
+    width: 15rem;
+    float: left;
+}
+
+#search__text-content p{
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    font-size: 20px;
+}
+
+#search__text-content h2{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 25px;
+}

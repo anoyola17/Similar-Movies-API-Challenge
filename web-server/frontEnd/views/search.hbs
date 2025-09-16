@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/movie.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Similar Movies</title>
+</head>
+
+{{>header}}         {{! This is the header partial {header.hbs }}
+    
+<div id="search-container">
+    {{#each movieData}}             {{! Loops through all the movies }}
+        <div>
+            <img src="https://image.tmdb.org/t/p/w500{{this.Poster}}">      {{! Base/Poster image path }}
+            
+            <div id="search__text-content">
+                <h2>{{this.Title}}</h2>                                         {{! Movie title }}
+                <p>Rating: {{this.Rating}}</p>                                  {{! Rating of the movie }}
+                <p>Release Date: {{this.Date}}</p>
+                <p>Overview: {{this.Overview}}</p>                       {{! Release date of the movie }}
+            </div>
+        </div>
+    {{/each}}
+</div>
+    
+    {{>footer}}     {{! This is the footer partial {footer.hbs }}
+</html>

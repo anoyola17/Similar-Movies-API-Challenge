@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="web-server/public/img/movie.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Popular Movies</title>
+</head>
+
+{{> header}}    {{! This is the header partial {header.hbs }}
+
+<main class="grid-container">
+    {{#each movieData}}     {{! Loops through all the movies }}
+        <div>
+            <img src="https://image.tmdb.org/t/p/w500{{this.poster}}">      {{! Base/Poster image path }}
+            <h3>{{this.title}}</h3>                                         {{! Movie title }}
+            <p>Rating: {{this.rating}}</p>                                  {{! Rating of the movie }}
+            <p>Release Date: {{this.releaseDate}}</p>                       {{! Release date of the movie }}
+        </div>
+    {{/each}}
+</main>
+
+{{> footer}}    {{! This is the footer partial {footer.hbs }}
+</html>
